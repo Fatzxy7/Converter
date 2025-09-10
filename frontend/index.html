@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All-in-One File Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>All-in-One File Converter</h1>
+    <p>Pilih file dan jenis konversi</p>
+    <form id="uploadForm" action="/convert" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <div class="buttons">
+            <button type="submit" name="action" value="pdf_to_docx">PDF → DOCX</button>
+            <button type="submit" name="action" value="pdf_to_txt">PDF → TXT</button>
+            <button type="submit" name="action" value="txt_to_pdf">TXT → PDF</button>
+            <button type="submit" name="action" value="docx_to_txt">DOCX → TXT</button>
+            <button type="submit" name="action" value="img_to_pdf">JPG/PNG → PDF</button>
+            <button type="submit" name="action" value="xlsx_to_csv">XLSX → CSV</button>
+            <button type="submit" name="action" value="mp4_to_mp3">MP4 → MP3</button>
+            <button type="submit" name="action" value="mp3_to_wav">MP3 → WAV</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
